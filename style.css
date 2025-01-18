@@ -349,16 +349,24 @@ h1 {
 @media all and (max-width: 560px){
     .landing-page{
         flex-direction: column;
-        margin-top: -10px;
+        margin-top: -12px;
         align-items: start;
+        overflow-x: hidden;
         padding: 0;
     }
     .landing-images{
         max-width: 100vw;
         padding: 0;
+        gap: 4vw;
+    }
+    .landing-images img {
+        max-width: 33%;
+        height: auto;
+        flex: 1 1 auto;
+        object-fit: cover;
     }
     .left-crop{
-        margin-left: -9vw;
+        margin-left: -8vw;
     }
     .landing-page .landing-content {
         max-width: 100%;
@@ -375,7 +383,7 @@ h1 {
         padding: 0.8rem;
     }
     .hover-content h3 { font-size: 1.2rem; }
-    .hover-content p { font-size: 0.7rem; }  
+    .hover-content p { font-size: 0.7rem; }
 }
 @media all and (max-width: 480px){
     h1 { font-size: 45px; }
