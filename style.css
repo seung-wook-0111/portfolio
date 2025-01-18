@@ -186,13 +186,13 @@ h1 {
 }
 .hover-content h3 {
     margin: 0;
-    font-size: 2rem;
+    font-size: 30px;
     font-weight: 600;
     line-height: 1.1;
 }
 .hover-content p {
     margin: 0.2rem 0 0;
-    font-size: 1rem;
+    font-size: 15px;
     font-weight: 300;
 }
 
@@ -269,8 +269,8 @@ h1 {
     .logo img { height: 35px; }
     .navbar { padding: 40px 9vw; }
     .landing-page { padding: 0 9vw 50px 0; }
-    .hover-content h3 { font-size: 1.7rem; }
-    .hover-content p { font-size: 1rem; }    
+    .hover-content h3 { font-size: 25px; }
+    .hover-content p { font-size: 15px; }    
 }
 @media all and (max-width: 880px){
     h1 { font-size: 33px; }
@@ -382,8 +382,8 @@ h1 {
         text-align: left;
         padding: 0.8rem;
     }
-    .hover-content h3 { font-size: 1.2rem; }
-    .hover-content p { font-size: 0.7rem; }
+    .hover-content h3 { font-size: 18px; }
+    .hover-content p { font-size: 10px; }
 }
 @media all and (max-width: 480px){
     h1 { font-size: 45px; }
