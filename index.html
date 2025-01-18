@@ -185,7 +185,7 @@
                 e.preventDefault();
                 const targetId = this.getAttribute('href').substring(1);
                 const targetElement = document.getElementById(targetId);
-                const navbarHeight = window.innerWidth <= 980 ? (window.innerWidth <= 750 ? 0 : 98) : 103;
+                const navbarHeight = window.innerWidth <= 980 ? (window.innerWidth <= 750 ? 0 : 94) : 99;
                 const targetPosition = targetElement ? targetElement.getBoundingClientRect().top + window.scrollY - navbarHeight : 0;
                  window.scrollTo({ top: targetPosition, behavior: 'smooth' });
             });
