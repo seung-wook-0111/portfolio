@@ -289,7 +289,7 @@ h1 {
 .subpage h1 {
     margin-top: 50px;
     margin-bottom: 10px;
-    font-size: 4rem;
+    font-size: 4em;
 }
 .subpage img {
     margin-top: 30px;
@@ -594,7 +594,7 @@ li{
         margin-top: 10px;
     }
     .subpage h1{
-        font-size: 2.8rem;
+        font-size: 3.3em;
     }
     .imagebox{
         flex-direction: column;
@@ -644,6 +644,12 @@ li{
     }
     .hover-content h3 { font-size: 18px; }
     .hover-content p { font-size: 10px; }
+    .subpage h1{ font-size: 2.8em; }
+    .subpage-section h2{ font-size: 1.4em; }
+    .subpage-section h3{ font-size: 1em; }
+    .subpage-section p, .subpage-section ol, .subpage-section ul{ font-size: 0.9em; }
+    p.strong{ font-size: 1.2em; }
+    .subpage-section { padding: 45px 35px 35px; }
 }
 @media all and (max-width: 480px){
     h1 { font-size: 45px; }
@@ -652,9 +658,7 @@ li{
 @media all and (max-width: 440px){
     h1 { font-size: 40px; }
     .landing-page .landing-content p { font-size: 21px; }
-    .subpage h1{
-        font-size: 2.3rem;
-    }
+    .subpage h1{ font-size: 2.3em; }
 }
 @media all and (max-width: 380px){
     h1 { font-size: 35px; }
