@@ -1,13 +1,16 @@
+/*
 var onIndex = false;
 var isAnimating = false;
+
 
 window.onload = function() {
     // Get the current file name
     let currentFile = window.location.pathname.split('/').pop();
     console.log("Current File: " + currentFile);
-    if(currentFile.startsWith("index.html")) onIndex = true;
+    if(currentFile.startsWith("index.html") || window.location.pathname === "/") onIndex = true;
     else onIndex = false;
 };
+*/
 
 // Navbar scroll minimize feature
 window.onscroll = function(){scrollFunction()};
