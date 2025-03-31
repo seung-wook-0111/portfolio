@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seung Wook Hong Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;300;400;600;700&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="preload" href="subpage.js" as="script">
+    <link rel="icon" type="image/png" sizes="32x32" href="common-assets/favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="common-assets/apple-favicon.png">
+</head>
+
+<body>
+    <div id="header-p"></div>
+    <main>
+        <div class="subpage">
+            <div class="subpage-body">
+                <div class="subpage-section">
+                    <h1 class="subpage-element">TTOKTTOK</h1>
+                    <h2>A personally customized smart subway guide for every step of the
+                        journey</h2>
+                    <p class="subtext"><br>Primary Designer and Researcher&nbsp;&nbsp;&nbsp;<span
+                            class="weak">|</span>&nbsp;&nbsp;&nbsp;May 2024 - Dec 2024<br>
+                        <strong>19th Universal Design Contest Second Award & SOUL Best Project Award</strong>
+                    </p>
+                    <div class="tags">
+                        <div class="tag">Qualitative UX Research</div>
+                        <div class="tag">Figma</div>
+                        <div class="tag">Illustrator</div>
+                        <div class="tag">Blender</div>
+                        <div class="tag">UX / UI Design</div>
+                    </div>
+                    <img src="subpage-assets/ttokttok/poster.jpg" alt="">
+                </div>
+                <div class="subpage-section">
+                    <h2>Background</h2>
+                    <p>The Seoul Metropolitan Subway is one of the world’s largest and most complex metro systems, with
+                        over 300 stations and an annual ridership exceeding 2 billion, thanks to its affordability and
+                        convenience.</p>
+                    <p>However, despite its vital role as an accessible public transportation system, the Seoul
+                        Metropolitan Subway has faced persistent criticism for its information design. The lack of a
+                        unified design system and the top-down nature of the bureaucratic design process have left many
+                        users—especially newcomers to the giant metropolis, travelers, foreign residents, and
+                        individuals with disabilities—struggling to navigate the complex network, despite multiple
+                        efforts to improve the design system.</p>
+                    <img src="subpage-assets/ttokttok/problem.png" alt="">
+                </div>
+                <div class="subpage-section background-black">
+                    <h2>First Research Problem</h2>
+                    <p>With these challenges in mind, we launched the Seoul Subway Information System Redesign project.
+                        To identify users’ needs in detail, we formulated the following research question:</p>
+                    <p class="strong">“What specific information and design elements do users need to successfully
+                        navigate the subway system?”</p>
+                </div>
+                <div class="subpage-section">
+                    <h2>Qualitative User Study</h2>
+                    <p>We recruited 11 participants from various age groups, including four foreigners and three
+                        visually impaired individuals, and conducted qualitative user research.</p>
+                    <p>First, we conducted a <strong>Think-Aloud + Observation</strong> session. Participants were asked
+                        to complete two
+                        subway journeys: one without using a smartphone—simulating scenarios where network access or
+                        battery is unavailable—and another using smartphone apps as they normally would. We accompanied
+                        participants throughout their journey, from locating the entrance and using apps and signage to
+                        plan their route, to navigating inside the station, boarding the subway, and reaching their
+                        destination. During the process, participants were instructed to verbalize which information
+                        design elements they referenced and how they made their navigation decisions.</p>
+                    <p>Following the first session, we conducted <strong>semi-structured interviews</strong>.
+                        Participants were presented with
+                        various styles of information design available in Seoul Subway, such as signs and displays, and
+                        asked to rate them. The goal was to encourage participants to articulate their thoughts, discuss
+                        the strengths and weaknesses of the design to identify the elements most important to their
+                        subway navigation and riding experience.</p>
+                    <img src="subpage-assets/ttokttok/userstudy.png" alt="">
+                </div>
+                <div class="subpage-section">
+                    <h2>Analysis & Design Framework</h2>
+                    <p>Afterward, four team members conducted a qualitative analysis of all the collected data, which
+                        included open, axial, and selective coding.</p>
+                    <p>As a result, we developed a design framework that reflects users’ experiences and opinions,
+                        highlighting key elements that remain prominent across different information design mediums and
+                        demographic groups.</p>
+                    <img src="subpage-assets/ttokttok/designframework.png" alt="">
+                </div>
+                <div class="subpage-section background-black">
+                    <h2>Following Research Problem</h2>
+                    <p class="strong">“How can we apply the design framework to improve the subway users’ experience?”</p>
+                </div>
+                <div class="subpage-section">
+                    <h2>Target Issue</h2>
+                    <p><strong>Sense of Stability and Control</strong>&nbsp;&nbsp;&nbsp;<span class="weak">|</span>&nbsp;&nbsp;&nbsp;TTOKTTOK addresses the issue that limited physical space for information in subway trains and
+                        stations prevents users from seeing the “big picture” of their journey, which is essential for a
+                        sense of stability and comfort.</p>
+                    <p><strong>Conveying Core Information</strong>&nbsp;&nbsp;&nbsp;<span class="weak">|</span>&nbsp;&nbsp;&nbsp;Additionally, current information design fails to effectively communicate "core information" to marginalized groups, such
+                        as non-Korean speakers and visually impaired individuals, leaving them uncertain and uneasy.</p>
+                    <p><strong>Appropriate Placement</strong>&nbsp;&nbsp;&nbsp;<span class="weak">|</span>&nbsp;&nbsp;&nbsp;While smartphones offer a good alternative to overcome the limitations of physical space,
+                        existing subway map apps are ineffective at providing core and helpful information. Users must
+                        navigate through multiple steps to retrieve the information they need, which causes delays and
+                        confusion.</p>
+                </div>
+                <div class="subpage-section">
+                    <h2>Designing the Solution</h2>
+                    <p>We developed TTOKTTOK by directly applying the design framework, displaying “core
+                        information” with temporal and spatial continuity, while presenting “helpful information”
+                        concisely.</p>
+                    <img src="subpage-assets/ttokttok/example1.png" alt="">
+                    <p>TTOKTTOK provides relevant information for each step of the subway journey by detecting the
+                        user’s location and situation via GPS and beacons. Drawing from user research data, it
+                        <strong>consistently displays the “core information” at the top</strong> of the screen, with <strong>“helpful
+                        information” below, presented in customizable modules</strong>. These modules adapt to the user’s travel
+                        patterns, pace, and preferences, learning intelligently over time.</p>
+                    <p>TTOKTTOK is <strong>especially beneficial for the visually impaired</strong>, offering a consistent and
+                        predictable modular interface that is compatible with VoiceOver. It aims to provide users with a
+                        clear overview of their journey, offering greater freedom and ease for those whose travels are
+                        often limited by routes they can remember.</p>
+                    <p><br></p>
+                    <img src="subpage-assets/ttokttok/example2.png" alt="">
+                    <p><br></p>
+                    <img src="subpage-assets/ttokttok/example3.png" alt="">
+                    <p><br></p>
+                    <img src="subpage-assets/ttokttok/example4.png" alt="">
+                    <p><br></p>
+                    <img src="subpage-assets/ttokttok/example5.png" alt="">
+                </div>
+            </div>
+        </div>
+    </main>
+    <div id="footer-p"></div>
+    <script src="subpage.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

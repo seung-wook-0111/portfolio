@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seung Wook Hong Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;300;400;600;700&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="preload" href="subpage.js" as="script">
+    <link rel="icon" type="image/png" sizes="32x32" href="common-assets/favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="common-assets/apple-favicon.png">
+</head>
+
+<body>
+    <div id="header-p"></div>
+    <main>
+        <div class="subpage">
+            <div class="subpage-body">
+                <div class="subpage-section">
+                    <h1 class="subpage-element">UMDS</h1>
+                    <h2>The Ultimately Universal Metro Direction Sign</h2>
+                    <p class="subtext"><br>Primary Designer and Researcher&nbsp;&nbsp;&nbsp;<span
+                            class="weak">|</span>&nbsp;&nbsp;&nbsp;May 2024 - Dec 2024<br>
+                        <strong>19th Universal Design Contest Third Award & SOUL Best Project Award</strong>
+                    </p>
+                    <div class="tags">
+                        <div class="tag">Qualitative UX Research</div>
+                        <div class="tag">Illustrator</div>
+                        <div class="tag">Blender</div>
+                        <div class="tag">UX Design</div>
+                        <div class="tag">Information Design</div>
+                    </div>
+                    <img src="subpage-assets/umds/poster.jpg" alt="">
+                </div>
+                <div class="subpage-section">
+                    <h2>Background</h2>
+                    <p>The Seoul Metropolitan Subway is one of the world’s largest and most complex metro systems, with
+                        over 300 stations and an annual ridership exceeding 2 billion, thanks to its affordability and
+                        convenience.</p>
+                    <p>However, despite its vital role as an accessible public transportation system, the Seoul
+                        Metropolitan Subway has faced persistent criticism for its information design. The lack of a
+                        unified design system and the top-down nature of the bureaucratic design process have left many
+                        users—especially newcomers to the giant metropolis, travelers, foreign residents, and
+                        individuals with disabilities—struggling to navigate the complex network, despite multiple
+                        efforts to improve the design system.</p>
+                    <img src="subpage-assets/ttokttok/problem.png" alt="">
+                </div>
+                <div class="subpage-section background-black">
+                    <h2>First Research Problem</h2>
+                    <p>With these challenges in mind, we launched the Seoul Subway Information System Redesign project.
+                        To identify users’ needs in detail, we formulated the following research question:</p>
+                    <p class="strong">“What specific information and design elements do users need to successfully
+                        navigate the subway system?”</p>
+                </div>
+                <div class="subpage-section">
+                    <h2>Qualitative User Study</h2>
+                    <p>We recruited 11 participants from various age groups, including four foreigners and three
+                        visually impaired individuals, and conducted qualitative user research.</p>
+                    <p>First, we conducted a <strong>Think-Aloud + Observation</strong> session. Participants were asked
+                        to complete two
+                        subway journeys: one without using a smartphone—simulating scenarios where network access or
+                        battery is unavailable—and another using smartphone apps as they normally would. We accompanied
+                        participants throughout their journey, from locating the entrance and using apps and signage to
+                        plan their route, to navigating inside the station, boarding the subway, and reaching their
+                        destination. During the process, participants were instructed to verbalize which information
+                        design elements they referenced and how they made their navigation decisions.</p>
+                    <p>Following the first session, we conducted <strong>semi-structured interviews</strong>.
+                        Participants were presented with
+                        various styles of information design available in Seoul Subway, such as signs and displays, and
+                        asked to rate them. The goal was to encourage participants to articulate their thoughts, discuss
+                        the strengths and weaknesses of the design to identify the elements most important to their
+                        subway navigation and riding experience.</p>
+                    <img src="subpage-assets/ttokttok/userstudy.png" alt="">
+                </div>
+                <div class="subpage-section">
+                    <h2>Analysis & Design Framework</h2>
+                    <p>Afterward, four team members conducted a qualitative analysis of all the collected data, which
+                        included open, axial, and selective coding.</p>
+                    <p>As a result, we developed a design framework that reflects users’ experiences and opinions,
+                        highlighting key elements that remain prominent across different information design mediums and
+                        demographic groups.</p>
+                    <img src="subpage-assets/ttokttok/designframework.png" alt="">
+                </div>
+                <div class="subpage-section background-black">
+                    <h2>Following Research Problem</h2>
+                    <p class="strong">“How can we apply the design framework to improve the subway users’ experience?”
+                    </p>
+                </div>
+                <div class="subpage-section">
+                    <h2>Target Issue</h2>
+                    <p>UMDS addresses key shortcomings in current metro signage, including the failure to display core
+                        information, poor readability, and an illogical design that often leads to user confusion.</p>
+                    <ul>
+                        <li><strong>Lack of Core Information</strong>&nbsp;&nbsp;&nbsp;<span
+                                class="weak">|</span>&nbsp;&nbsp;&nbsp;Users primarily need to know where the train is
+                            headed and where they should go. However, current signs list numerous station names, which
+                            can be overwhelming, especially for those unfamiliar with them.</li>
+                        <li><strong>Poor Readability</strong>&nbsp;&nbsp;&nbsp;<span
+                                class="weak">|</span>&nbsp;&nbsp;&nbsp;Inconsistent or incorrect separators create
+                            uncertainty about directions, and small text sizes make the signs difficult to read.</li>
+                        <li><strong>Illogical Design</strong>&nbsp;&nbsp;&nbsp;<span
+                                class="weak">|</span>&nbsp;&nbsp;&nbsp;The inconsistency in signage design further
+                            confuses users. Instead of emphasizing train direction and navigation, which is all the
+                            users need, many signs present excessive station names, reducing their efficiency.</li>
+                    </ul>
+                </div>
+                <div class="subpage-section">
+                    <h2>Designing the Solution</h2>
+                    <p>UMDS was designed by directly applying the design framework.</p>
+                    <img src="subpage-assets/umds/feature1.png" alt="">
+                    <p><strong>Visualizing Train Directions</strong>&nbsp;&nbsp;&nbsp;<span
+                            class="weak">|</span>&nbsp;&nbsp;&nbsp;Instead of listing multiple station names, UMDS
+                        visually represents the train’s direction (upbound, downbound, clockwise, counterclockwise,
+                        etc). It also maintains a consistent layout by displaying a major destination along with the
+                        train’s next stop</p>
+                    <img src="subpage-assets/umds/feature2.png" alt="">
+                    <p><strong>Enhanced Readability</strong>&nbsp;&nbsp;&nbsp;<span
+                            class="weak">|</span>&nbsp;&nbsp;&nbsp;The support rod doubles as a visual separator to
+                        distinguish different directions, reducing confusion. Text and arrows are enlarged for better
+                        readability.</p>
+                    <img src="subpage-assets/umds/feature3.png" alt="">
+                    <p><strong>Logical Design Rules</strong>&nbsp;&nbsp;&nbsp;<span
+                            class="weak">|</span>&nbsp;&nbsp;&nbsp;UMDS follows specific design rules to enhance
+                        clarity. It prioritizes symbols over text, using icons such as an airplane for the Airport
+                        Railroad whenever possible. For exit numbers, if six or fewer exits are listed, all numbers are
+                        shown, whereas if there are more than six, they are displayed in a condensed "1 ᐧᐧᐧ 9" format
+                        for readability, reflecting user research results and Miller's Law.</p>
+                    <p><strong>Accessibility Features</strong>&nbsp;&nbsp;&nbsp;<span
+                            class="weak">|</span>&nbsp;&nbsp;&nbsp;Recognizing that signage is often placed at
+                        intersections where tactile paving cannot aid making directional decisions, UMDS proposes guide
+                        audio features at signs, serving as audible landmarks for visually impaired users.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div id="footer-p"></div>
+    <script src="subpage.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
