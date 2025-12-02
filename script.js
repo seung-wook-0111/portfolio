@@ -13,22 +13,52 @@ window.onload = function() {
 */
 
 // Navbar scroll minimize feature
+window.onload = function(){scrollFunction()};
 window.onscroll = function(){scrollFunction()};
+
 function scrollFunction(){
     if(window.innerWidth > 750){
         if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-            document.getElementById("navbar").style.padding = "30px 100px";
+            if(window.innerHeight > 800){
+                document.getElementById("navbar").style.paddingTop = "30px";
+                document.getElementById("navbar").style.paddingBottom = "30px";
+                document.getElementById("logo").style.height = "40px";
+                document.getElementById("pc-nav-items").classList.remove("sm-font");
+            }
+            else{
+                document.getElementById("navbar").style.paddingTop = "22px";
+                document.getElementById("navbar").style.paddingBottom = "22px";
+                document.getElementById("logo").style.height = "35px";
+                document.getElementById("pc-nav-items").classList.add("sm-font");
+            } 
             document.getElementById("navbar").style.background = "rgba(255, 255, 255, 0.8)";
-            document.getElementById("navbar").style.backdropFilter = "blur(10px)";
+            document.getElementById("navbar").style.backdropFilter = "blur(7px)";
         }
         else {
-            document.getElementById("navbar").style.padding = "40px 100px";
+            document.getElementById("navbar").style.paddingTop = "40px";
+            document.getElementById("navbar").style.paddingBottom = "40px";
             document.getElementById("navbar").style.background = "transparent";
             document.getElementById("navbar").style.backdropFilter = "none";
+            document.getElementById("logo").style.height = "40px";
+            document.getElementById("pc-nav-items").classList.remove("sm-font");
         }
     }
 }
 
+function setSlideAnimation(offset=0){
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId);
+            let navbarHeight = window.innerWidth <= 980 ? (window.innerWidth <= 750 ? 0 : 94) : 99;
+            if (window.innerHeight <= 800) navbarHeight -= 20;
+            navbarHeight += offset;
+            const targetPosition = targetElement ? targetElement.getBoundingClientRect().top + window.scrollY - navbarHeight : 0;
+            window.scrollTo({ top: targetPosition, behavior: 'smooth' });
+        });
+    });
+}
 
 /*
 function goBack(section) {

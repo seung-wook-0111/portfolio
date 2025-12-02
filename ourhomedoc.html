@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OurHomeDoc - Seung Wook Hong Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;300;400;600;700&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="preload" href="subpage.js" as="script">
+    <link rel="icon" type="image/png" sizes="32x32" href="common-assets/favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="common-assets/apple-favicon.png">
+</head>
+
+<body>
+    <div id="header-w"></div>
+    <main>
+        <div class="subpage">
+            <div class="subpage-body">
+                <div class="subpage-section">
+                    <h1 class="subpage-element">OurHomeDoc</h1>
+                    <p class="subtext">Lead Designer&nbsp;&nbsp;&nbsp;<span class="weak">|</span>&nbsp;&nbsp;&nbsp;Aug
+                        2025 - Present
+                    </p>
+                    <div class="tags">
+                        <div class="tag filled">UX/UI Design</div>
+                        <div class="tag filled">3D Graphic Design</div>
+                        <div class="tag">Figma</div>
+                        <div class="tag">Blender</div>
+                    </div>
+                    <img src="subpage-assets/ourhomedoc/landing.png" alt="">
+                </div>
+                <div class="subpage-section">
+                    <h2>Introduction</h2>
+                    <p>OurHomeDoc is a startup founded this year to <strong>connect home-visit medical professionals
+                            with
+                            patients</strong>, aligned
+                        with the government’s initiative to formalize home-visit medical care. The service helps expand
+                        access to treatment, especially for patients with limited mobility.</p>
+                    <p>OurHomeDoc currently offers two products:</p>
+                    <ul>
+                        <li><strong>A patient-facing website</strong>, where patients can request home-visit medical
+                            services or receive support applying for long-term care insurance grades.</li>
+                        <li><strong>A provider-facing CRM</strong> (Customer Relationship Management) platform, which
+                            enables physicians to efficiently manage patients, appointments, schedules, and medical
+                            documentation.</li>
+                    </ul>
+                </div>
+                <div class="subpage-section background-black">
+                    <h2 class="section-emph">First Challenge: Patient-Facing Website</h2>
+                    <p class="strong">“How can I design a patient-facing website that clearly communicates the key
+                        features of the service?”</p>
+                </div>
+                <div class="subpage-section">
+                    <h2>Landing Page Design</h2>
+                    <p>The landing page is designed to be simple and straightforward. The top section features 3D
+                        graphics representing the website’s two main functions—requesting home-visit medical services
+                        and applying for long-term care insurance grades—along with direct call-to-action buttons for
+                        each.</p>
+                    <p>Below this, the page offers a clear summary of the three steps involved in making a request or
+                        application, helping users understand the process at a glance and reinforcing how easy the
+                        service is to use.</p>
+                    <img src="subpage-assets/ourhomedoc/steps-section.png" alt="">
+                </div>
+                <div class="subpage-section">
+                    <h2>Request / Application Page Design</h2>
+                    <p>The request and application pages were designed to give users a strong sense of control by
+                        clearly displaying their current progress.</p>
+                    <img src="subpage-assets/ourhomedoc/request-page.png" alt="">
+                    <p>On the desktop version, a progress panel on the left
+                        shows both the current step and the overall process, with navigation buttons that allow users to
+                        freely return to previous sections at any time. On mobile, the progress bar remains visible at
+                        all times to maintain the same level of clarity.</p>
+                    <img class="with-shadow" src="subpage-assets/ourhomedoc/ai-filter.png" alt="">
+                    <p class="caption">The AI automatically selects filters based on the user’s symptoms. The blue
+                        button allows the user to skip the filtering step easily, once the
+                        suggestions are confirmed.
+                    </p>
+                    <p>User convenience is prioritized throughout the experience. For example, when users search for
+                        medical centers to request treatment, they can simply enter their symptoms, and the AI
+                        automatically chooses relevant tags for the search. This makes the selection process faster,
+                        easier, and more intuitive.</p>
+                    <img src="subpage-assets/ourhomedoc/steps-afterwards.png" alt="">
+                    <p>Once the application for long-term care insurance grades is completed, the website clearly
+                        outlines the next steps. Because this section provides important instructions on what users need
+                        to do afterward, they can proceed only after confirming the information with a checkbox.</p>
+                </div>
+                <div class="subpage-section background-black">
+                    <h2 class="section-emph">Second Challenge: CRM</h2>
+                    <p class="strong">“How can we effectively assist medical professionals manage their patients,
+                        schedules, and documentation?”
+                    </p>
+                </div>
+                <div class="subpage-section">
+                    <h2>Dashboard Page</h2>
+                    <p>The dashboard highlights the most important information at a glance. It displays upcoming
+                        appointments, patients waiting to be scheduled, patients with incomplete payments, and documents
+                        that are recommended for completion.</p>
+                    <img src="subpage-assets/ourhomedoc/crm-dashboard.png" alt="">
+                </div>
+                <div class="subpage-section">
+                    <h2>Schedule Management Page</h2>
+                    <p>The schedule management page helps users find the right time slots where both the user(medical
+                        professional) and the patient are available, while also accounting for travel time between
+                        appointments.</p>
+                    <img src="subpage-assets/ourhomedoc/crm-schedule-filter.png" alt="">
+                    <p>When the user clicks on a patient entry, the patient’s available time slots are highlighted in
+                        the schedule, and their location is emphasized on the map. Clicking on a specific date filters
+                        the list to show only patients available on that day.</p>
+                    <img src="subpage-assets/ourhomedoc/crm-schedule-cart.png" alt="">
+                    <p>One of the biggest needs identified among home-visit doctors is minimizing travel time. The
+                        schedule management page addresses this through an automatic optimization feature. Users can
+                        drag patient entries into separate “carts,” and the system calculates the optimal visiting order
+                        based on travel time between locations.</p>
+                    <img src="subpage-assets/ourhomedoc/crm-schedule-drag.png" alt="">
+                    <p>Once the optimization is complete, the user can simply drag the optimized blocks into the
+                        calendar—and the schedule is set.</p>
+                    <img src="subpage-assets/ourhomedoc/crm-schedule-monthly.png" alt="">
+                    <p>Users can also switch to a monthly calendar view if they prefer a more macroscopic overview. When
+                        adding a schedule, the patient’s preferred visit time and the user’s existing schedule are
+                        displayed together, enabling more efficient and informed planning.</p>
+                </div>
+                <div class="subpage-section">
+                    <h2>Patient Management Page</h2>
+                    <p>The patient management page is designed to be intuitive. Selecting a patient from the table on
+                        the left displays key information in the top-right panel and detailed information in the
+                        bottom-right panel.</p>
+                    <img src="subpage-assets/ourhomedoc/crm-default.png" alt="">
+                    <p>To convey complex data within a limited table space, information is color-coded. Related
+                        health policy
+                        categories are shown in blue, orange, yellow, and gray. Preferred visit days & times are also
+                        color-coded: morning in blue, early afternoon in yellow, and late afternoon in orange. The
+                        user(medical professional)’s
+                        availability is indicated with filled circles for available slots and hollow
+                        circles for unavailable ones.</p>
+                    <img src="subpage-assets/ourhomedoc/crm-hover.png" alt="">
+                    <p>Hover interactions reveal tooltips showing details or explaining what each color represents,
+                        enabling a
+                        compact yet clear presentation of information.</p>
+                    <img src="subpage-assets/ourhomedoc/crm-expanded.png" alt="">
+                    <p>Users can flexibly adjust how much information they see. The detailed information section can
+                        be
+                        expanded or collapsed, allowing users to focus on either high-level summaries or more granular
+                        details as needed.</p>
+                </div>
+                <div class="subpage-section">
+                    <h2>Document Management Page</h2>
+                    <p>The document management page organizes files effectively by displaying each document’s category
+                        and its related healthcare policy.</p>
+                    <img src="subpage-assets/ourhomedoc/crm-document.png" alt="">
+                    <p>Users can select multiple documents to download or print at
+                        once.</p>
+                    <img src="subpage-assets/ourhomedoc/crm-document-suggestion.png" alt="">
+                    <p>The page also prompts users to add any missing documents if none were uploaded after a
+                        visit.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div id="footer-w"></div>
+    <script src="subpage.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
