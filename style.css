@@ -348,6 +348,11 @@ img.with-shadow {
     animation: scroll 80s linear infinite;
     z-index: 1;
 }
+@supports (-webkit-touch-callout: none) {
+    .carousel-track {
+        animation-duration: 30s;
+    }
+}
 
 .carousel-track img {
     height: 100%;
