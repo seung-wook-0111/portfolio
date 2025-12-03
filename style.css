@@ -338,7 +338,7 @@ img.with-shadow {
     user-select: none;
     margin-top: -4vw;
     margin-bottom: 9vw;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .carousel-track {
