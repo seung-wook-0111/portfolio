@@ -1322,12 +1322,16 @@ li {
     }
 
     .subtext {
-        margin-bottom: 25px;
+        margin-bottom: 15px;
     }
 
     .tag {
         padding: 0.3em 0.6em;
         font-size: 0.85em;
+    }
+    .tags {
+        gap: 0.3em;
+        margin-bottom: 20px;
     }
 
     .about-container .subpage-section {
