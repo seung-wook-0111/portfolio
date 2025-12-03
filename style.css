@@ -336,8 +336,9 @@ img.with-shadow {
     max-height: 350px;
     min-height: 230px;
     user-select: none;
-    margin-top: -4vw;
-    margin-bottom: 9vw;
+    margin-top: -4.5vw;
+    padding-top: 10px;
+    padding-bottom: 9vw;
     overflow-x: hidden;
 }
 
@@ -372,7 +373,7 @@ img.with-shadow {
 }
 
 .modal {
-    display: flex;
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -389,6 +390,7 @@ img.with-shadow {
 }
 
 .modal.show {
+    display: flex;
     opacity: 1;
     pointer-events: auto;
 }
