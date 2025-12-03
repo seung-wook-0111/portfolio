@@ -3,7 +3,6 @@ html {
     margin: 0;
     min-height: 100vh;
     background-color: transparent;
-    overflow-x: hidden;
 }
 
 body {
@@ -14,7 +13,6 @@ body {
     min-width: 100vw;
     display: flex;
     flex-direction: column;
-    overflow-x: hidden;
     overflow-y: auto;
     opacity: 1;
     transition: opacity 1s ease-in-out;
@@ -373,7 +371,7 @@ img.with-shadow {
 }
 
 .modal {
-    display: none;
+    display: flex;
     position: fixed;
     top: 0;
     left: 0;
@@ -390,7 +388,6 @@ img.with-shadow {
 }
 
 .modal.show {
-    display: flex;
     opacity: 1;
     pointer-events: auto;
 }
