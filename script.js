@@ -60,6 +60,31 @@ function setSlideAnimation(offset=0){
     });
 }
 
+if (window.matchMedia("(hover: none)").matches) {
+    const tappableSelectors = [
+        "nav a",
+        ".carousel-track img",
+        ".content-item",
+        ".contact-items a",
+        ".intext-link"
+    ];
+
+    const tappables = document.querySelectorAll(tappableSelectors.join(","));
+
+    tappables.forEach(el => {
+        el.addEventListener("touchstart", () => {
+            el.classList.add("tap-active");
+        });
+        // tap-release
+        el.addEventListener("touchend", () => {
+            el.classList.remove("tap-active");
+        });
+        el.addEventListener("touchcancel", () => {
+            el.classList.remove("tap-active");
+        });
+    });
+}
+
 /*
 function goBack(section) {
     const referrer = document.referrer;
